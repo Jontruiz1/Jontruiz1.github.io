@@ -26,3 +26,32 @@
 		});
 
 })(jQuery);
+
+$(function () {
+	$("#databaseShow").hover(
+		function () {
+			$(this).attr("src", "images/Database_Showcase.gif");
+		},
+		function () {
+			$(this).attr("src", "images/Database_Showcase_Static.gif");
+		}
+	);
+
+	$("#weatherShow").hover(
+		function () {
+			$(this).attr("src", "images/Weather_Showcase.gif");
+		},
+		function () {
+			$(this).attr("src", "images/Weather_Showcase_Static.gif");
+		}
+	);
+
+	$("#roshamboShow").hover(
+		function () {
+			$(this).attr("src", "images/Roshambo_Showcase.gif");
+		},
+		function () {
+			$(this).attr("src", "images/Roshambo_Showcase_Static.gif");
+		}
+	);
+});
