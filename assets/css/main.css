@@ -29,6 +29,21 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+img.animated-gif{
+	height:auto;
+	width:auto;
+}
+img.static{
+	position:absolute;
+	background:white;
+	height:300px;
+	width:323px;
+}
+
+img.static:hover{
+	opacity:0;
+}
+
 body {
 	line-height: 1;
 }
