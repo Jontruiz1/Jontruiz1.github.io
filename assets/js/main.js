@@ -26,14 +26,3 @@
 		});
 
 })(jQuery);
-
-$(function(){
-	$("#myImg").hover(
-		function() {
-			$(this).attr("src", "images/Database_Showcase.gif");
-		},
-		function(){
-			$(this).attr("src", "images/Database_Showcase_Static.gif");
-		}
-	);
-});
