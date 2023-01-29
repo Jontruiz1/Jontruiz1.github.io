@@ -54,4 +54,11 @@ $(function () {
 			$(this).attr("src", "images/Roshambo_Showcase_Static.gif");
 		}
 	);
+
+	$("#fracturedShow").hover(
+		function() {
+			$(this).attr("src", "images/Fractured_Showcase")
+		}
+	)
+
 });
