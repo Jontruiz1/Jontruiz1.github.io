@@ -102,21 +102,33 @@
 		</div>
 	</article>
 
+	
 	<article id="portfolio" class="wrapper style2">
 		<div class="container">
+			<header>
+				<h2>Try the game out!</h2>
+				<p>WASD - Move CircleGuy around</p>
+				<p>Arrow Keys - Shoot in 4 directions</p>
+				<p>Esc - Pause</p>
+			</header>
 			<div class="row aln-center">
-				<div class="gm4html5_div_class" id="gm4html5_div_id">
-					<!-- Create the canvas element the game draws to -->
-					<canvas id="canvas" width="1200" height="800" >
-							 <p>Your browser doesn't support HTML5 canvas.</p>
-					</canvas>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a class="image featured">
+							<div class="gm4html5_div_class" id="gm4html5_div_id">
+								<canvas id="canvas" width="800" height="600" >
+										 <p>Your browser doesn't support HTML5 canvas.</p>
+								</canvas>
+							</div>
+					
+							<script type="text/javascript" src="html5game/RogueLike.js?MUQAC=595090346"></script>
+							<script>window.onload = GameMaker_Init;</script>
+						</a>
+					</article>
 				</div>
-		
-				<!-- Run the game code -->
-				<script type="text/javascript" src="html5game/RogueLike.js?MUQAC=595090346"></script>
-				<script>window.onload = GameMaker_Init;</script>
 			</div>
-		</div>
+			
+		</div>		
 	</article>
 
 	<!-- Contact -->
