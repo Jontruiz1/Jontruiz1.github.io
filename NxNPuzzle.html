@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="assets/css/shCore.css" type="text/css"/>
+	<link rel="stylesheet" href="assets/css/shThemeDefault.css" type="text/css"/>
 </head>
 
 <body class="is-preload">
@@ -33,7 +35,7 @@
 						A collection of various NxN Sliding Puzzle solvers written in C++ for a university class.
                         Search algorithms used include: Breadth-First Search, Depth-First Search and A* Search.
 					</p>
-					<a href="#portfolio" class="button large scrolly">Check the program out!</a>
+					<a href="#portfolio" class="button large scrolly">About the programs</a>
 				</div>
 			</div>
 		</div>
@@ -42,13 +44,60 @@
 	<article id="portfolio" class="wrapper style2">
 		<div class="container">
 			<header>
+				<h2>About the code</h2>
+				<p>
+					Since the programs were made for a university course, the reposity is private. If you would like to access it,
+					feel free to let me know.
+				</p>
 			</header>
+			
+			<div class ="row aln-center" style="width: 100; height: auto;">
+				<div class="col-4 col-6-medium col-12-small">
+					<a class="image featured"><img id="searchShow" src="images/SearchShow_Static.png"/></a>
+				</div>
+			</div>
+			
 			<div class="row aln-center">
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
-						<a class ="image featured"></a>
 						<p>
+							The first algorithm used was Breadth-First search.
+							This implementation uses 2 vectors. One is used like 
+							a queue to store the 'open' puzzle states while the other is used
+							to store the states that have been closed or visited.
 
+							If a node is not the goal node and it has not already been closed, 
+							that puzzle state is expanded, meaning every possible child state
+							of that state is put on the open vector. Otherwise, the path from the
+							initial state to the goal state is traced, put on a solution vector and then returned
+							at the very end.
+
+						</p>
+					</article>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<p>
+							The second algorithm used was Depth-First search.
+							Similarily to the Breadth-First Search, this implementation uses 2 vectors. 							a stack to store the 'open' puzzle states while the other is used
+							However, the open vector is implemented like a stack where the last element
+							that was inserted is checked for expansion first.
+							
+							Otherwise, the the algorithm functions identically to the BFS.
+						
+						</p>
+					</article>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<p>
+							The final algorithm used was A* search.
+							The algorithm for this search was roughly the same as the others
+							but the container for the open list was implemented as a STL priority_queue
+							and a state was defined as having higher priority than another based on
+							the number of moves it was from the solution state. 
 						</p>
 					</article>
 				</div>

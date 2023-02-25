@@ -55,10 +55,13 @@ $(function () {
 		}
 	);
 
-	$("#fracturedShow").hover(
-		function() {
-			$(this).attr("src", "images/Fractured_Showcase")
+	$("#searchShow").hover(
+		function () {
+			$(this).attr("src", "images/SearchShowcase.gif");
+		},
+		function () {
+			$(this).attr("src", "images/SearchShow_Static.png");
 		}
-	)
+	);
 
 });
