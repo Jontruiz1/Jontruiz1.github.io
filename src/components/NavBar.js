@@ -7,15 +7,15 @@ import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
-    const [scrolled, seScrolled] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50){
-                seScrolled(true);
+                setScrolled(true);
             }
             else{
-                seScrolled(false);
+                setScrolled(false);
             }
         }
         window.addEventListener("scroll", onScroll);
@@ -42,13 +42,13 @@ export const NavBar = () => {
                         <Nav.Link href="#skills" className = {activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                         <Nav.Link href="#projects" className = {activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
-                    <span className="navbar-test">
+                    <span className="navbar-text">
                         <div className="social-icon">
                             <a href="#"><img src={navIcon1} alt=""/></a>
                             <a href="#"><img src={navIcon2} alt=""/></a>
                             <a href="#"><img src={navIcon3} alt=""/></a>
                         </div>
-                        <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+                        <button className="vvd"><span>Let's Connect</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>

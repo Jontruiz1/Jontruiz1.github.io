@@ -9,10 +9,12 @@
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
+    "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18.3.1",
+    "react-multi-carousel": "^2.8.5",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4",
-    "homepage": "http://Jontruiz1.github.io/Jontruiz1.github.io"
+    "homepage" : "http://Jontruiz1.github.io/Jontruiz1.github.io"
   },
   "scripts": {
     "start": "react-scripts start",
