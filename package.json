@@ -11,7 +11,8 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "homepage": "http://Jontruiz1.github.io/Jontruiz1.github.io"
   },
   "scripts": {
     "start": "react-scripts start",
