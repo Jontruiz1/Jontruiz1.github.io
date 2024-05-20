@@ -36,10 +36,10 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Test text</p>
+                            <p>Take a look at some of my Technical skills</p>
                             <Carousel responsive={responsive} infinte={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image1"></img>
+                                    <img src={meter2} alt="Image1"></img>
                                     <h5>C++</h5>
                                 </div>
                                 <div className="item">
@@ -49,6 +49,10 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={meter2} alt="Image1"></img>
                                     <h5>Java</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image1"></img>
+                                    <h5>Python</h5>
                                 </div>
                             </Carousel>
                         </div>
