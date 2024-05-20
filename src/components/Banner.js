@@ -52,7 +52,6 @@ export const Banner = () => {
                         <h1>{`Hi, I'm Jonathan Ruiz\n`}</h1>
                         <h2><span className="wrap">{text}</span></h2>
                         <p>Enthusiastic hardworker looking for any job opportunities in the Computer Science and programming world.</p>
-                        <button onClick={() =>console.log('connect')}><ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </Col>
                     <Col  xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img"/>
