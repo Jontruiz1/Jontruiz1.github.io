@@ -1,11 +1,12 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
+import { Skills } from "./Skills"
 
-export const Banner = () => {
+export const Home = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate =["Software Engineer", "Computer Scientist", "Game Developer"];
+    const toRotate = ["Software Engineer", "Computer Scientist", "Game Developer"];
     const [text, setText] = useState('');
     const period = 2000;
     const [delta, setDelta] = useState(500 - Math.random() * 100);
@@ -18,16 +19,16 @@ export const Banner = () => {
 
         setText(updatedText);
 
-        if(isDeleting){
+        if (isDeleting) {
 
             // determines the delete speed
-            setDelta(prevDelta  => prevDelta / 1.7);
+            setDelta(prevDelta => prevDelta / 1.7);
         }
 
-        if(!isDeleting && updatedText === fullText){
+        if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true);
             setDelta(period);
-        } else if(isDeleting && updatedText === ''){
+        } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             setDelta(500);
@@ -35,11 +36,11 @@ export const Banner = () => {
     }
 
     useEffect(() => {
-        let ticker = setInterval(()=> {
+        let ticker = setInterval(() => {
             tick();
         }, delta)
 
-        return () => {clearInterval(ticker)};
+        return () => { clearInterval(ticker) };
     }, [text])
 
     return (
