@@ -14,17 +14,20 @@ function App() {
     case "/Home":
       component = <Home/>
       break;
+    case "/Skills":
+      component = <Skills/>
+      break;
     case "/Projects":
       component = <Projects />
       break
   }
 
   return (
-    <>
+    <div className="content-container">
       <NavBar/>
       {component}
       <Footer/>
-    </>
+    </div>
   )
 
 }
